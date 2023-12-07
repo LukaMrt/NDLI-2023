@@ -1,6 +1,10 @@
 body {
     background-color: #1C6A00;
-    font-family: "", serif;
+    font-family: "Tangerine", serif;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .title {
@@ -12,5 +16,6 @@ body {
 }
 
 .cards {
-    color: #9E0E0E;
+    --color: #9E0E0E;
+    justify-self: center;
 }
