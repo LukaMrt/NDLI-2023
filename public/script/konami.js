@@ -1,4 +1,5 @@
 import {score} from "./variables.js";
+import {handleExplosion} from "./explosion.js";
 
 // const konamiCodePattern = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
 const konamiCodePattern = [38, 38, 40, 40]
@@ -13,6 +14,7 @@ const konamiCodeAction = function () {
         scoreBarIn.style.height = scoreBarInHeight + '%';
         if (scoreBarInHeight >= 100) {
             clearInterval(interval);
+            handleExplosion();
         }
     }, 50);
 
