@@ -8,7 +8,7 @@ canvas.height = window.innerHeight * 0.98;
 // Function to create an explosion
 function createExplosion(x, y, colors) {
     const particles = [];
-    const particleCount = 100; // Number of particles in explosion
+    const particleCount = 1000; // Number of particles in explosion
 
     for (let i = 0; i < particleCount; i++) {
         particles.push({
