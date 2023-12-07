@@ -13,8 +13,18 @@ const konamiCodeAction = function () {
         scoreBarInHeight++;
         scoreBarIn.style.height = scoreBarInHeight + '%';
         if (scoreBarInHeight >= 100) {
+            const elementsToHide = document.querySelectorAll('body *:not(#explosionCanvas)');
             clearInterval(interval);
-            handleExplosion();
+            elementsToHide.forEach(element => {
+                element.style.transition = 'opacity 0.5s';
+                element.style.opacity = '0';
+            });
+            setTimeout(() => {
+                elementsToHide.forEach(element => {
+                    element.style.display = 'none';
+                });
+                handleExplosion();
+            }, 500);
         }
     }, 50);
 
