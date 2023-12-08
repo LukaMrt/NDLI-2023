@@ -1,8 +1,24 @@
+:root {
+  --background-color: #1C6A00;
+  --background-question: #B4B4B4;
+  --background-thermo: #D3D3D3;
+  --background-thermo-color: #821010;
+  --background-other: #D9D9D9;
+  --skip-color: #D9D9D9;
+  --text-color: black;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
 .score-bar-out {
   position: relative;
+  border-radius: 1vw;
   width: 30%;
   height: 80%;
-  border: solid 2px #000;
+  border: solid 2px var(--background-thermo);
+  background-color: var(--background-thermo);
   z-index: 1;
 }
 
@@ -10,9 +26,10 @@
   position: absolute;
   bottom: 0;
   left: 0;
+  border-radius: 1vw;
   width: 100%;
   height: 10%;
-  background-color: #333;
+  background-color: var(--background-thermo-color);
   z-index: 2;
 }
 
@@ -57,7 +74,16 @@ header {
   align-items: center;
 }
 
+header h1 {
+  background-color: var(--background-other);
+}
+
+header h2 {
+  background-color: var(--background-question);
+}
+
 h1 {
+  color: var(--text-color);
   text-align: center;
   border: solid black 3px;
   border-radius: 3em;
@@ -69,6 +95,7 @@ h1 {
 }
 
 h2 {
+  color: var(--text-color);
   text-align: center;
   border: solid black 3px;
   padding-top: 20px;
@@ -108,22 +135,23 @@ section {
   height: 100%;
   justify-content: space-around;
   width: 100%;
-  margin-right:5% ;
+  margin-right: 5%;
 }
 
-.cards
-{
+.cards {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   height: 70%;
-  
+
 
 }
-.card
-{
-  border:solid black 3px;
+
+.card {
+  border: solid black 3px;
+  background-color: var(--background-other);
   border-radius: 10px;
+  color: var(--text-color);
   width: 25%;
   height: 80%;
   display: flex;
@@ -131,13 +159,37 @@ section {
   align-items: center;
 }
 
-.actions
-{
-display: flex;
-justify-content: space-around;
+.actions {
+  display: flex;
+  justify-content: space-around;
 }
 
-.draw
-{
+#popup {
+  display: none;
+  justify-content: space-around;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
 
+form button {
+  background-color: var(--skip-color);
+  border: var(--skip-color);
+  padding: 35%;
+  border-radius: 25%;
+  font-weight: bold;
+}
+
+@keyframes fondu {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
