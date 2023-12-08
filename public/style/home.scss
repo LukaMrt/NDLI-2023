@@ -1,10 +1,14 @@
 h1 {
     color: blue;
+    justify-self: self-start;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 body {
     background-color: #1C6A00;
-    font-family: "Tangerine", serif;
+    font-family: "Bungee Spice", serif;
+    height: 100vh;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -15,10 +19,20 @@ body {
     background-color: #D9D9D9;
 }
 
-.icons {
+.sun, .earth {
     color: #370D00;
     width: 12rem;
     height: 12rem;
+}
+
+.sun {
+    align-self: self-end;
+    justify-self: self-start;
+}
+
+.earth {
+    align-self: self-start;
+    justify-self: baseline;
 }
 
 .cards {
