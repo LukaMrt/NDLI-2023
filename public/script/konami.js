@@ -1,5 +1,4 @@
 import {score} from "./variables.js";
-import {handleExplosion} from "./explosion.js";
 
 // const konamiCodePattern = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
 const konamiCodePattern = [38, 38, 40, 40]
@@ -12,9 +11,28 @@ const konamiCodeAction = function () {
     const interval = setInterval(function () {
         scoreBarInHeight++;
         scoreBarIn.style.height = scoreBarInHeight + '%';
-        if (scoreBarInHeight >= 100) {
+        if (scoreBarInHeight >= 130) {
+            const elementsToHide = document.querySelectorAll('body *:not(#burn-video)');
             clearInterval(interval);
-            handleExplosion();
+            elementsToHide.forEach(element => {
+                element.style.transition = 'opacity 2s';
+                element.style.opacity = '0';
+            });
+            setTimeout(() => {
+                elementsToHide.forEach(element => {
+                    element.style.display = 'none';
+                });
+                // play a video
+                const video = document.getElementById('burn-video');
+                video.style.display = 'block';
+                video.style.opacity = '1';
+                video.style.transition = 'opacity 0.5s';
+                video.play();
+                // Redirect to a page
+                setTimeout(() => {
+                    window.location.href = '../pages/game-over.html';
+                }, 4000);
+            }, 1000);
         }
     }, 50);
 
