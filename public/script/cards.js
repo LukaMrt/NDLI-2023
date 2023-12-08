@@ -12,7 +12,10 @@ r1.addEventListener('click', function () {
         alert('Bravo !');
     } else {
         alert('C\'est faux !');
-        addToScore(10);
+        addToScore(15);
+        if (score >= 100) {
+            window.location.href = '../images/bonk.gif';
+        }
     }
     if (questions.length === 1) {
         alert('Vous avez gagné !');
@@ -28,7 +31,10 @@ r2.addEventListener('click', function () {
         alert('Bravo !');
     } else {
         alert('C\'est faux !');
-        addToScore(10);
+        addToScore(15);
+        if (score >= 100) {
+            window.location.href = '../images/bonk.gif';
+        }
     }
     if (questions.length === 1) {
         alert('Vous avez gagné !');
@@ -44,7 +50,10 @@ r3.addEventListener('click', function () {
         alert('Bravo !');
     } else {
         alert('C\'est faux !');
-        addToScore(10);
+        addToScore(15);
+        if (score >= 100) {
+            window.location.href = '../images/bonk.gif';
+        }
     }
     if (questions.length === 1) {
         alert('Vous avez gagné !');
@@ -64,8 +73,7 @@ export async function loadCards() {
         });
 }
 
-function loadCardsFromData(data) {
-
+function loadCardsFromData() {
     const h2 = document.getElementById('question');
     h2.innerHTML = questions[0].question;
 
