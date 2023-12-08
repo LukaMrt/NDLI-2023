@@ -10,6 +10,7 @@ function theme(theme) {
             document.documentElement.style.setProperty('--background-question', '#B4B4B4');
             document.documentElement.style.setProperty('--background-other', '#D9D9D9');
             document.documentElement.style.setProperty('--background-thermo', '#D3D3D3');
+            document.documentElement.style.setProperty('--background-thermo-color', '#821010');
             document.documentElement.style.setProperty('--skip-color', '#D9D9D9');
             document.documentElement.style.setProperty('--text-color', 'black');
             document.getElementById('pile').src = '../images/THEME_1 (1).svg';
@@ -19,6 +20,7 @@ function theme(theme) {
             document.documentElement.style.setProperty('--background-question', '#3286AA');
             document.documentElement.style.setProperty('--background-other', '#91BBD1');
             document.documentElement.style.setProperty('--background-thermo', '#3286AA');
+            document.documentElement.style.setProperty('--background-thermo-color', '#821010');
             document.documentElement.style.setProperty('--skip-color', '#91BBD1');
             document.documentElement.style.setProperty('--text-color', '#00356A');
             document.getElementById('pile').src = '../images/THEME_2 (1).svg';
