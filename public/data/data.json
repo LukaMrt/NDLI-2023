@@ -2,14 +2,14 @@
   "Tableau": [
     {
       "categorie": "Transports",
-      "question": "Les transports sont responsables d'1/4 des émissions mondiales. Parmi ces transports, lequel est un intrus ?",
+      "question": "Les transports sont responsables d'1/4 des émissions mondiales de GES. Parmi ces transports, lequel d'entre eux est un intrus ?",
       "reponse1": "Voiture",
       "reponse2": "Avion",
-      "reponse3": "Transport en commun"
+      "reponse3": "Transports en commun"
     },
     {
       "categorie": "Alimentation",
-      "question": "En France, l'élevage est à l'origine de 80% des gaz à effet de serre de l'agriculture. Comment devons-nous manger pour que notre alimentation bénéficie au climat et à la santé ?",
+      "question": "En France, l'élevage est à l'origine de 80% des gaz à effet de serre de l'agriculture. Comment devons-nous manger pour que notre alimentation soit bénéfique au climat et à la santé ?",
       "reponse1": "Faire de l'élevage intensif",
       "reponse2": "Augmenter notre consommation de viande",
       "reponse3": "Manger plus de végétaux riches en protéines"
@@ -51,14 +51,14 @@
     },
     {
       "categorie": "Information",
-      "question": "Qu'est ce qui n'est pas une conséquence du réchauffement climatique sur l'environnement ?",
+      "question": "Laquelle de ces réponses n'est pas une conséquence du réchauffement climatique sur l'environnement ?",
       "reponse1": "La fonte des glaciers",
       "reponse2": "La perturbation des écosystèmes",
       "reponse3": "La déforestation"
     },
     {
       "categorie": "Chiffre",
-      "question": "De combien de degré devrait augmenter la température moyenne sur Terre en 2100?",
+      "question": "De combien de degrés devrait augmenter la température moyenne sur Terre en 2100?",
       "reponse1": "1.5°C",
       "reponse2": "0.5°C",
       "reponse3": "3°C"
