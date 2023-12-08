@@ -126,8 +126,9 @@ section {
   width: 20%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  gap: 0;
 }
 
 .game {
@@ -161,12 +162,14 @@ section {
 
 .actions {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #popup {
   display: none;
   justify-content: space-around;
+  align-items: center;
   z-index: 2;
   position: fixed;
   top: 0;
@@ -192,4 +195,15 @@ form button {
   to {
     opacity: 1;
   }
+}
+
+img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+.co2, #avancement {
+  color: var(--text-color);
+  font-size: 1.5em;
 }
