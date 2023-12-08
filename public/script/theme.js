@@ -7,6 +7,7 @@ function theme(theme) {
     anim = document.getElementsByClassName("illus");
     switch (theme) {
         case "classique":
+            document.querySelector(".snowflakes").classList.add("hidden");
             document.documentElement.style.setProperty('--background-color', '#1C6A00');
             document.documentElement.style.setProperty('--background-question', '#B4B4B4');
             document.documentElement.style.setProperty('--background-other', '#D9D9D9');
@@ -17,6 +18,7 @@ function theme(theme) {
             document.getElementById('pile').src = '../images/THEME_1.svg';
             break;
         case "neige":
+            document.querySelector(".snowflakes").classList.remove("hidden");
             anim.display = "block";
             document.documentElement.style.setProperty('--background-color', '#fafbfd');
             document.documentElement.style.setProperty('--background-question', '#3286AA');
@@ -28,6 +30,7 @@ function theme(theme) {
             document.getElementById('pile').src = '../images/THEME_2.svg';
             break;
         case "princesse":
+            document.querySelector(".snowflakes").classList.add("hidden");
             document.documentElement.style.setProperty('--background-color', '#FD8CFF');
             document.documentElement.style.setProperty('--background-question', '#B240E8');
             document.documentElement.style.setProperty('--background-other', '#D191A8');
