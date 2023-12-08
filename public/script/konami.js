@@ -34,7 +34,7 @@ const konamiCodeAction = function () {
                 video.play();
                 // Redirect to a page
                 setTimeout(() => {
-                    window.location.href = 'pages/game-over.html';
+                    window.location.href = '../pages/game-over.html';
                 }, 4000);
             }, 1000);
         }

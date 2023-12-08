@@ -8,7 +8,7 @@ const creditsCodeAction = function () {
     const img = document.createElement('img');
     img.style.width = '100vw';
     img.style.height = '100vh';
-    img.src = 'images/first-easter-egg.png';
+    img.src = '../images/first-easter-egg.png';
     body.appendChild(img);
 }
 

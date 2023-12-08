@@ -13,7 +13,7 @@ function theme(theme) {
             document.documentElement.style.setProperty('--background-thermo-color', '#821010');
             document.documentElement.style.setProperty('--skip-color', '#D9D9D9');
             document.documentElement.style.setProperty('--text-color', 'black');
-            document.getElementById('pile').src = 'images/THEME_1.svg';
+            document.getElementById('pile').src = '../images/THEME_1.svg';
             break;
         case "neige":
             document.documentElement.style.setProperty('--background-color', '#fafbfd');
@@ -23,7 +23,7 @@ function theme(theme) {
             document.documentElement.style.setProperty('--background-thermo-color', '#821010');
             document.documentElement.style.setProperty('--skip-color', '#91BBD1');
             document.documentElement.style.setProperty('--text-color', '#00356A');
-            document.getElementById('pile').src = 'images/THEME_2.svg';
+            document.getElementById('pile').src = '../images/THEME_2.svg';
             break;
         case "princesse":
             document.documentElement.style.setProperty('--background-color', '#FD8CFF');
@@ -33,7 +33,7 @@ function theme(theme) {
             document.documentElement.style.setProperty('--background-thermo-color', '#671369');
             document.documentElement.style.setProperty('--skip-color', '#FAC1FF');
             document.documentElement.style.setProperty('--text-color', '#00356A');
-            document.getElementById('pile').src = 'images/THEME_3.svg';
+            document.getElementById('pile').src = '../images/THEME_3.svg';
             break;
     }
     document.getElementById("popup").style.display = 'none';
