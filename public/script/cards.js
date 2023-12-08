@@ -1,4 +1,4 @@
-import {addToScore, getScore} from "./variables";
+import {addToScore, getScore} from "./variables.js";
 import {getQuestions} from "../data/data.js";
 
 let questions = [];
