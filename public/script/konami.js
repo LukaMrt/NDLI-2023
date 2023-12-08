@@ -1,4 +1,4 @@
-import {score} from "./variables.js";
+import {addToScore, score} from "./variables.js";
 
 // const konamiCodePattern = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
 const konamiCodePattern = [38, 38, 40, 40]
@@ -7,13 +7,17 @@ let lastKeyTime = 0;
 
 const konamiCodeAction = function () {
     const scoreBarIn = document.querySelector('.score-bar-in');
-    let scoreBarInHeight = score;
+    let delta = 1;
+    scoreBarIn.style.transition = 'height 0.05s ease-in-out';
     const interval = setInterval(function () {
-        scoreBarInHeight++;
-        scoreBarIn.style.height = scoreBarInHeight + '%';
-        if (scoreBarInHeight >= 130) {
-            const elementsToHide = document.querySelectorAll('body *:not(#burn-video)');
+        addToScore(delta);
+        delta += 0.1;
+        if (delta > 3) {
+            delta = 3;
+        }
+        if (score >= 130) {
             clearInterval(interval);
+            const elementsToHide = document.querySelectorAll('body *:not(#burn-video)');
             elementsToHide.forEach(element => {
                 element.style.transition = 'opacity 2s';
                 element.style.opacity = '0';
