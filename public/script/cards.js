@@ -14,12 +14,12 @@ r1.addEventListener('click', function () {
         alert('C\'est faux !');
         addToScore(15);
         if (score >= 100) {
-            window.location.href = '../images/bonk.gif';
+            window.location.href = 'images/bonk.gif';
         }
     }
     if (questions.length === 1) {
         alert('Vous avez gagné !');
-        window.location.href = '../pages/win.html';
+        window.location.href = 'pages/win.html';
         return;
     }
     questions.shift();
@@ -33,12 +33,12 @@ r2.addEventListener('click', function () {
         alert('C\'est faux !');
         addToScore(15);
         if (score >= 100) {
-            window.location.href = '../images/bonk.gif';
+            window.location.href = 'images/bonk.gif';
         }
     }
     if (questions.length === 1) {
         alert('Vous avez gagné !');
-        window.location.href = '../pages/win.html';
+        window.location.href = 'pages/win.html';
         return;
     }
     questions.shift();
@@ -52,12 +52,12 @@ r3.addEventListener('click', function () {
         alert('C\'est faux !');
         addToScore(15);
         if (score >= 100) {
-            window.location.href = '../images/bonk.gif';
+            window.location.href = 'images/bonk.gif';
         }
     }
     if (questions.length === 1) {
         alert('Vous avez gagné !');
-        window.location.href = '../pages/win.html';
+        window.location.href = 'pages/win.html';
         return;
     }
     questions.shift();
@@ -65,7 +65,7 @@ r3.addEventListener('click', function () {
 });
 
 export async function loadCards() {
-    fetch('../data/data.json')
+    fetch('data/data.json')
         .then(response => response.json())
         .then(data => {
             questions = shuffle(data.Tableau);
