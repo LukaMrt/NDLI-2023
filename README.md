@@ -5,6 +5,9 @@
 L'excellence écologique est un projet de site web qui a pour but de sensibiliser les gens à l'écologie. Il est réalisé
 dans le cadre de la compétition de programmation "La nuit de l'info" par l'équipe "L'excellence technologique".
 
+Nous avons développé un petit quiz qui permet de tester ses connaissances sur l'écologie. Il est possible de choisir
+entre 3 réponses à chaque question. Les questions restent assez simples pour que tout le monde puisse y répondre.
+
 ## Installation
 
 ### Prérequis
