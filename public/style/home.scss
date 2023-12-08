@@ -51,3 +51,20 @@ main {
 .cards {
     justify-self: center;
 }
+
+.hidden {
+    display: none;
+}
+
+#luka {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 3;
+  }
+  
