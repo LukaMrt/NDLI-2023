@@ -15,11 +15,10 @@ body {
 main {
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    height: 95%;
-    width: 95%;
-    padding: 30px;
+    height: 98%;
+    width: 98%;
 }
 
 .title {
@@ -50,4 +49,22 @@ main {
 
 .cards {
     justify-self: center;
+    height: 12rem;
+    width: 12rem;
+}
+
+.jouer {
+    z-index: 2;
+    position: absolute;
+    text-decoration: none;
+    font-size: 200%;
+    margin-top: 5rem;
+    margin-left: 2rem;
+}
+
+.threeCards {
+    z-index: 1;
+    position: relative;
+    height: 100%;
+    width: 100%;
 }
