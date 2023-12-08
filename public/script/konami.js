@@ -1,4 +1,4 @@
-import {addToScore, score} from "./variables.js";
+import {addToScore, getScore} from "./variables.js";
 
 const konamiCodePattern = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
 // const konamiCodePattern = [38, 38, 40, 40]
@@ -15,7 +15,7 @@ const konamiCodeAction = function () {
         if (delta > 3) {
             delta = 3;
         }
-        if (score >= 130) {
+        if (getScore() >= 130) {
             clearInterval(interval);
             const elementsToHide = document.querySelectorAll('body *:not(#burn-video)');
             elementsToHide.forEach(element => {

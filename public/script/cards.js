@@ -1,4 +1,4 @@
-import { addToScore, score } from "./variables";
+import {addToScore, getScore} from "./variables";
 
 let questions = [];
 let answer = 1;
@@ -13,7 +13,7 @@ r1.addEventListener('click', function () {
     } else {
         alert('C\'est faux !');
         addToScore(15);
-        if (score >= 100) {
+        if (getScore() >= 100) {
             window.location.href = '../images/bonk.gif';
         }
     }
@@ -32,7 +32,7 @@ r2.addEventListener('click', function () {
     } else {
         alert('C\'est faux !');
         addToScore(15);
-        if (score >= 100) {
+        if (getScore() >= 100) {
             window.location.href = '../images/bonk.gif';
         }
     }
@@ -51,7 +51,7 @@ r3.addEventListener('click', function () {
     } else {
         alert('C\'est faux !');
         addToScore(15);
-        if (score >= 100) {
+        if (getScore() >= 100) {
             window.location.href = '../images/bonk.gif';
         }
     }
