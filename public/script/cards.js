@@ -1,4 +1,5 @@
 import {addToScore, getScore} from "./variables";
+import {getQuestions} from "../data/data.js";
 
 let questions = [];
 let answer = 1;
@@ -64,13 +65,9 @@ r3.addEventListener('click', function () {
     loadCardsFromData(questions);
 });
 
-export async function loadCards() {
-    fetch('../data/data.json')
-        .then(response => response.json())
-        .then(data => {
-            questions = shuffle(data.Tableau);
-            loadCardsFromData(questions);
-        });
+export function loadCards() {
+    questions = shuffle(getQuestions().Tableau);
+    loadCardsFromData(questions);
 }
 
 function loadCardsFromData() {
