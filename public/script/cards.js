@@ -77,6 +77,12 @@ function loadCardsFromData() {
     const h2 = document.getElementById('question');
     h2.innerHTML = questions[0].question;
 
+    const h1 = document.getElementById('category');
+    h1.innerHTML = questions[0].categorie;
+
+    const avancement = document.getElementById('avancement');
+    avancement.innerHTML = 'Question ' + (11 - (questions.length)) + '/10';
+
     answer = Math.floor(Math.random() * 3) + 1;
 
     if (answer === 1) {

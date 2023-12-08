@@ -1,7 +1,7 @@
 import {addToScore, score} from "./variables.js";
 
-// const konamiCodePattern = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
-const konamiCodePattern = [38, 38, 40, 40]
+const konamiCodePattern = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
+// const konamiCodePattern = [38, 38, 40, 40]
 const konami = [];
 let lastKeyTime = 0;
 
