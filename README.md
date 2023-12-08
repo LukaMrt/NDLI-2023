@@ -16,7 +16,7 @@ Pour installer le projet, il faut avoir installé [Node.js](https://nodejs.org/e
 Pour installer le projet, il faut d'abord cloner le dépôt git :
 
 ```bash
-git clone 
+git clone https://github.com/LukaMrt/NDLI-2023.git
 ```
 
 Ensuite, il faut installer les dépendances :
